@@ -1,0 +1,11 @@
+services:
+  mochi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+
+    ports:
+      - 1883
+      - 1882
+      - 8080
